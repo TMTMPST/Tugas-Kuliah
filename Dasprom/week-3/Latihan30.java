@@ -8,11 +8,11 @@ public class Latihan30 {
 
         //Memasukkan Rangkaian Parrarel R1 - R3
         System.out.print("Masukkan R1 : ");
-        r1 = input.nextInt();
+        r1 = input.nextDouble();
         System.out.print("Masukkan R2 : ");
-        r2 = input.nextInt();
+        r2 = input.nextDouble();
         System.out.print("Masukkan R3 : ");
-        r3 = input.nextInt();
+        r3 = input.nextDouble();
 
         //Hasil Rangkaian Parrarel R1 - R3
         double Rp = 1 / (1 / r1 + 1 / r2 + 1 / r3);
