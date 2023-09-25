@@ -3,18 +3,18 @@ import java.util.Scanner;
 public class PemilihanPercobaan230 {
     public static void main(String[] args) {
         Scanner input30 = new Scanner(System.in);
-        System.out.print("Nilai UAS : ");
+        System.out.print("Nilai UAS \t: ");
         float uas = input30.nextFloat();
-        System.out.print("Nilai UTS : ");
+        System.out.print("Nilai UTS \t: ");
         float uts = input30.nextFloat();
-        System.out.print("Nilai Kuis : ");
+        System.out.print("Nilai Kuis\t: ");
         float kuis = input30.nextFloat();
-        System.out.print("Nilai Tugas  : ");
+        System.out.print("Nilai Tugas\t: ");
         float tugas = input30.nextFloat();
 
         float total = (uas * 0.4f) + (uts * 0.3f) + (kuis * 0.1f) + (tugas * 0.2f);
         if (80 <= total && total <= 100) {
-            System.out.println(total +" Mendapatkan Nilai A (Sangat Baik)");
+            System.out.println(" Mendapatkan Nilai A (Sangat Baik)");
         } else if (73 <= total && total < 80){
             System.out.println("Mendapatkan Nilai  B+ (Lebih dari Baik)");
         } else if (65 <= total && total < 73){
