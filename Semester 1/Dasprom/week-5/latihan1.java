@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class latihan1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scr = new Scanner(System.in);
         System.out.print("Berapa jarak Musuh: ");
-        int jarak = sc.nextInt();
+        int jarak = scr.nextInt();
         
         if (jarak <= 5) {
             System.out.println("Melee Weapon");
