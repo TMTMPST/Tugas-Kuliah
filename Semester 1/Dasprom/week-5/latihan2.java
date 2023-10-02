@@ -9,8 +9,10 @@ public class latihan2 {
         user = sc.nextLine();
 
         System.out.print("Masukkan Pass: ");
-        pass = sc.nextLine();
+        Pass = sc.nextLine();
 
-        if (user.equalsIgnoreCase(Pass))
+        if (user.equalsIgnoreCase(Pass)) {
+
+        }
     }
 }
