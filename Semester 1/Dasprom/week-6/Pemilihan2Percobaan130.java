@@ -11,6 +11,9 @@ public class Pemilihan2Percobaan130 {
             if ((thn % 100)!=0) {
                 System.out.println("Tahun Kabisat");
             }
+            else {
+                System.out.println("Bukan Tahun Kabisat");
+            }
         } else {
             System.out.println("Bukan Tahun Kabisat");
         }
