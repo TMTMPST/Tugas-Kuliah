@@ -15,9 +15,15 @@ public class Pemilihan2Percobaan230 {
 
         if (totalsudut == 180) {
             if((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90)){
-                System.out.println("Segitiga tersebut adalah segitiga siku siku");
-            } if ((sudut1 == 70) || (sudut2 == 70) || (sudut3 == 70) && (sudut1 == 40) || (sudut2 == 40) || (sudut3 == 40)){
+                if ((sudut1 == sudut2) || (sudut1 == sudut3) || (sudut2 == sudut3)) {
+                    System.out.println("Segitiga tersebut adalah segitiga siku siku sama kaki");
+                } else {
+                    System.out.println("Segitiga tersebut adalah segitiga siku siku");
+                }
+            } else if ((sudut1 == sudut2) || (sudut1 == sudut3) || (sudut2 == sudut3)){
                 System.out.println("Segitiga tersebut adalah segitiga sama kaki");
+            } else if ((sudut1 == 60) && (sudut2 == 60) && (sudut3 == 60)){
+                System.out.print("segitiga tersebut adalah segitiga sama sisi");
             } else {
                 System.out.println("Segitiga tersebut adalah segitiga sembarang");
             }
