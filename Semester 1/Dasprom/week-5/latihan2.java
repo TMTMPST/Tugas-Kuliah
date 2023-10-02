@@ -13,6 +13,6 @@ public class latihan2 {
 
         if (user.equalsIgnoreCase(Pass)) {
 
-        }
+        }sc.close();
     }
 }

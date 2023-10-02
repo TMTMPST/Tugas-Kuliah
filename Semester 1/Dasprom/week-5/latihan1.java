@@ -10,6 +10,6 @@ public class latihan1 {
             System.out.println("Melee Weapon");
         } else if (jarak <=1000){
             System.out.println("Ranged Weapon");
-        }
+        }scr.close();
     }
 }

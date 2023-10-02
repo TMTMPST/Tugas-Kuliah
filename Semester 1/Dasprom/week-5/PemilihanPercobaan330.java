@@ -33,6 +33,6 @@ public class PemilihanPercobaan330 {
             default:
                 System.out.println("Operator Tidak Ada");
                 break;
-        }
+        }input30.close();
     }    
 }

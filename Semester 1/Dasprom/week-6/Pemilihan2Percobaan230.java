@@ -30,6 +30,6 @@ public class Pemilihan2Percobaan230 {
 
         } else {
             System.out.println("Bukan Segitiga");
-        }
+        }input30.close();
     }
 }

@@ -27,7 +27,7 @@ public class PemilihanPercobaan230 {
             System.out.println("Mendapatkan Nilai D (Kurang)");
         } if (total < 39) {
             System.out.println("Mendapatkan Nilai E (Gagal)");
-        }
+        }input30.close();
     }           
 }
 
