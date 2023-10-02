@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Pemilihan2Percobaan230 {
     public static void main(String[] args) {
         Scanner input30 = new Scanner(System.in);
-        int sudut1, sudut2, sudut3, totalsudut;
+        float sudut1, sudut2, sudut3, totalsudut;
 
         System.out.print("Masukkan Sudut 1 : ");
         sudut1 = input30.nextInt();
