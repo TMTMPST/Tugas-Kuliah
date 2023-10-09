@@ -26,5 +26,6 @@ public class DoWhileCuti30 {
                 break;
             }
         } while (jatahCuti > 0);
+        scan.close();
     }
 }

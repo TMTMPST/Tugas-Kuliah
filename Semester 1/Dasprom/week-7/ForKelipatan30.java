@@ -4,7 +4,7 @@ public class ForKelipatan30 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int kelipatan, jumlah = 0, counter = 0;
-        float avg;
+
 
         System.out.print("Masukkan bilangan kelipatan (1 - 9) : ");
         kelipatan = scan.nextInt();
@@ -14,10 +14,10 @@ public class ForKelipatan30 {
                 counter++;
             }
         }
-        avg = jumlah / counter;
+        float avg = (float)jumlah / counter;
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
         System.out.printf("Total Bilangan kelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, jumlah);
-        System.out.printf("Total Rata Rata jumlah dan counter %d adalah %d\n", avg);
+        System.out.printf("Total Rata Rata jumlah dan counter %d adalah %.2f\n", kelipatan, avg);
         scan.close();
     }   
 }
