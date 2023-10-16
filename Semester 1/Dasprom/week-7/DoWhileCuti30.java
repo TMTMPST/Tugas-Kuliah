@@ -1,30 +1,33 @@
 import java.util.Scanner;
-
 public class DoWhileCuti30 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int jatahCuti , jumlahHari;
+        Scanner scan = new Scanner (System.in);
+        int jatahCuti, jumlahHari;
         String konfirmasi;
 
-        System.out.println("Jatah Cuti : ");
+        System.out.print("Jatah cuti: ");
         jatahCuti = scan.nextInt();
 
         do {
-            System.out.print("Apakah Anda Ingin mengambil cuti (y/t)? ");
+            System.out.print("Apakah Anda ingin mengambil cuti (y/t)? ");
             konfirmasi = scan.next();
 
             if (konfirmasi.equalsIgnoreCase("y")) {
-                System.out.print("Jumlah hari : ");
+                System.out.print("Jumlah hari: ");
                 jumlahHari = scan.nextInt();
-
+                
                 if (jumlahHari <= jatahCuti) {
                     jatahCuti -= jumlahHari;
-                    System.out.println("Sisa jatah cuti : " + jatahCuti);
+                    System.out.println("Sisa jatah cuti: " + jatahCuti);
                 } else {
-                    System.out.println("Sisa jatah cuti anda tidak mencukupi");
+                    System.out.println("Sisa jatah cuti Anda tidak mencukupi");
+                    System.out.println("Sisa jatah cuti: " + jatahCuti);
                 }
+            } else if (konfirmasi.equalsIgnoreCase("t")) {
                 break;
-            }
+            } else {
+                System.out.println("Input Konfirmasi Salah");
+            } 
         } while (jatahCuti > 0);
         scan.close();
     }
