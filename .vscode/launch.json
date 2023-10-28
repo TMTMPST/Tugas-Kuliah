@@ -1,0 +1,155 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ArrayBilangan30",
+            "request": "launch",
+            "mainClass": "ArrayBilangan30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "ArrayNilai30",
+            "request": "launch",
+            "mainClass": "ArrayNilai30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "ArrayRataBilai30",
+            "request": "launch",
+            "mainClass": "ArrayRataBilai30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "Bank30",
+            "request": "launch",
+            "mainClass": "Bank30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "ContohOperator30",
+            "request": "launch",
+            "mainClass": "ContohOperator30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "ContohVariabel30",
+            "request": "launch",
+            "mainClass": "ContohVariabel30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "DoWhileCuti30",
+            "request": "launch",
+            "mainClass": "DoWhileCuti30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "ForKelipatan30",
+            "request": "launch",
+            "mainClass": "ForKelipatan30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "Latihan30",
+            "request": "launch",
+            "mainClass": "Latihan30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "Pemilihan2Percobaan130",
+            "request": "launch",
+            "mainClass": "Pemilihan2Percobaan130",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "Pemilihan2Percobaan230",
+            "request": "launch",
+            "mainClass": "Pemilihan2Percobaan230",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "Pemilihan2Percobaan330",
+            "request": "launch",
+            "mainClass": "Pemilihan2Percobaan330",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "PemilihanPercobaan130",
+            "request": "launch",
+            "mainClass": "PemilihanPercobaan130",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "PemilihanPercobaan230",
+            "request": "launch",
+            "mainClass": "PemilihanPercobaan230",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "PemilihanPercobaan330",
+            "request": "launch",
+            "mainClass": "PemilihanPercobaan330",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "Segtiga30",
+            "request": "launch",
+            "mainClass": "Segtiga30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "TipeData30",
+            "request": "launch",
+            "mainClass": "TipeData30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "WhileGaji30",
+            "request": "launch",
+            "mainClass": "WhileGaji30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "WhileKelipatan30",
+            "request": "launch",
+            "mainClass": "WhileKelipatan30",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        },
+        {
+            "type": "java",
+            "name": "latihan1",
+            "request": "launch",
+            "mainClass": "latihan1",
+            "projectName": "Tugas-Kuliah_29a9f428"
+        }
+    ]
+}
