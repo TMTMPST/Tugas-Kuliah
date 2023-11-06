@@ -51,7 +51,7 @@ public class BioskopWithScanner30 {
 
             } if (menu == 2) {
                 for (int i = 0; i < penonton.length; i++) {
-                    System.out.print("Penonton baris ke-" + i + ": ");
+                    System.out.print("Penonton baris ke-" + (i+1) + ": ");
                     Boolean isNext = false;
                     for (String j : penonton[i]) {
                         if (isNext)
