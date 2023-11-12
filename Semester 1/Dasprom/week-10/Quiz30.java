@@ -15,6 +15,13 @@ public class Quiz30 {
                 int answer = sc.nextInt();
                 sc.nextLine();
                 success = (answer == number);
+                if (!success) {
+                    
+                } if (number < answer) {
+                    System.out.println("Angka Kebesaran");
+                } if (number > answer) {
+                    System.out.println("Angka Kekecilan");
+                }
             } while(!success);
             System.out.print("Apakah anda ingin mengulangi permainan (Y/y)");
             menu = sc.nextLine().charAt(0);
