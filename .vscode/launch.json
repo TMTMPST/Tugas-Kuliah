@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "coba",
+            "request": "launch",
+            "mainClass": "coba",
+            "projectName": "Tugas-Kuliah_81693146"
+        },
+        {
+            "type": "java",
             "name": "PersegiAngka30",
             "request": "launch",
             "mainClass": "PersegiAngka30",
