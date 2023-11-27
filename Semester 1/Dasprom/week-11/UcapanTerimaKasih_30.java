@@ -1,19 +1,29 @@
 import java.util.Scanner;
 
 public class UcapanTerimaKasih_30 {
-    public static String PenerimaUcapan(){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Tuliskan Nama orang yang ingin anda beri ucapan: ");
+    static Scanner sc;
+
+    public static String PenerimaUcapan() {
+        System.out.print("Tuliskan Nama orang yang ingin Anda beri ucapan:");
         String namaOrang = sc.nextLine();
-        sc.close();
         return namaOrang;
     }
-    public static void UcapanTerimaKAsih(){
+
+    public static void UcapanTerimakasih() {
         String nama = PenerimaUcapan();
-        System.out.println("Thank you " + nama + " For being the best teacher in the world.\n" +
-        "You inspired in me a love for learning and made me feel like. I could ask you anything.");
+        System.out.println("Thank you " + nama + " for being the best teacher in the world.\n" +
+                "You inspired in me a love for learning and made me feel like I could ask you anything.");
     }
+
+    public static void UcapanTambahan(String tambahan) {
+        System.out.println(tambahan);
+    }
+
     public static void main(String[] args) {
-        UcapanTerimaKAsih();
+        sc = new Scanner(System.in);
+        UcapanTerimakasih();
+        System.out.print("Tuliskan ucapan tambahan: ");
+        UcapanTambahan(sc.nextLine());
+        sc.close();
     }
 }
