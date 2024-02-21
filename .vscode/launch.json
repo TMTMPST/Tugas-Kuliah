@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BukuMain30",
+            "request": "launch",
+            "mainClass": "D1.Buku30.BukuMain30",
+            "projectName": "Tugas-Kuliah_5c1f16bc"
+        },
+        {
+            "type": "java",
             "name": "coba",
             "request": "launch",
             "mainClass": "coba",
