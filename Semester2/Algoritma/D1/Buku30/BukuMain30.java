@@ -16,5 +16,9 @@ public class BukuMain30 {
         Buku30 bk2 = new Buku30("Self Reward", "Mahera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku30 bkVidi = new Buku30("I Killed The Demon King", "Laswae", 120 , 30, 100000);
+        bkVidi.terjual(20);
+        bkVidi.tampilInformasi();
     }
 }
