@@ -1,16 +1,13 @@
 public class Dragon30 {
 
-    private int x; 
-    private int y;
-    private int width; 
-    private int height; 
+    int x, y, width, height; 
 
-   public Dragon30 (int x, int y, int width, int height){
+    public Dragon30 (int x, int y, int width, int height){
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
-   }
+    }
     void moveLeft() {
         x--;
         if (x < 0 || x > width) {
