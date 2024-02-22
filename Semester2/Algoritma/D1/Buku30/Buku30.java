@@ -1,9 +1,8 @@
 public class Buku30 {
     String judul, pengarang;
     int halaman, stok, harga;
-
-
-
+    float diskon, hargaTotal, bayar;
+    
     public Buku30(){
 
     }
@@ -39,5 +38,28 @@ public class Buku30 {
 
     void gantiHarga (int hrg) {
         harga = hrg;
+    }
+
+    void hitungHargaTotal(int jml) {
+        hargaTotal = harga * jml;
+        System.out.println("Harga Total : Rp. " + hargaTotal);
+    }
+    
+    void hitungDiskon() {
+        if (hargaTotal > 150000) {
+            diskon = hargaTotal * 0.12f;
+            System.out.println("Diskon : Rp. " + diskon);
+        } else if (hargaTotal >= 75000) {
+            diskon = hargaTotal * 0.05f;
+            System.out.println("Diskon : Rp. " + diskon);
+        } else {
+            diskon = 0;
+            System.out.println("Diskon : Rp. " + diskon);
+        }
+    }
+
+    void hitungHargaBayar() {
+        bayar = hargaTotal - diskon;
+        System.out.println("Harga Bayar : Rp. " + bayar);
     }
 }

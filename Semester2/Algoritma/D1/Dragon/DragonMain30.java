@@ -13,7 +13,6 @@ public class DragonMain30 {
         
         Dragon30 dragon1 = new Dragon30(0, 0, width, height);
 
-
         while (true) {
             dragon1.printPosition();
             System.out.print("Masukkan arah gerakan (a/w/s/d): ");

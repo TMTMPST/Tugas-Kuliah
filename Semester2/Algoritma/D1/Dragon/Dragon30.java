@@ -39,12 +39,12 @@ public class Dragon30 {
         }
     }
 
-
     void printPosition() {
         System.out.println("Posisi dragon: (" + x + ", " + y + ")");
     }
 
     void detectCollision() {
         System.out.println("Game Over!");
+        System.exit(0);
     }
 }
