@@ -1,6 +1,9 @@
 public class Dragon30 {
 
-    int x, y, width, height; 
+    private int x; 
+    private int y;
+    private int width; 
+    private int height; 
 
     public Dragon30 (int x, int y, int width, int height){
         this.x = x;
