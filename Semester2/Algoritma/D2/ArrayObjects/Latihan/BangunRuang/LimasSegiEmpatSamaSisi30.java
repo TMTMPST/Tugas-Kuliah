@@ -1,21 +1,17 @@
-public class LimasSegiEmpatSamaSisi30 {
+public class LimasSegiEmpatSamaSisi30 extends BangunRuang {
 
-    public double panjangSisiAlas;
-    public double tinggiLimas;
+    int sisiAlas, tinggi;
 
-    public LimasSegiEmpatSamaSisi30(double panjangSisiAlas, double tinggiLimas) {
-        this.panjangSisiAlas = panjangSisiAlas;
-        this.tinggiLimas = tinggiLimas;
+    public LimasSegiEmpatSamaSisi30(int sisiAlas, int tinggi) {
+        this.sisiAlas = sisiAlas;
+        this.tinggi = tinggi;
     }
 
-    public double LuasPermukaan() {
-        double luasAlas = panjangSisiAlas * panjangSisiAlas;
-        double luasSisiTegak = 4 * (0.5 * panjangSisiAlas * tinggiLimas);
-        return luasAlas + luasSisiTegak;
+    public void printLuas() {
+        System.out.println("Luas Limas Segi-4: " + ((sisiAlas * sisiAlas) + (4 * (0.5 * sisiAlas * tinggi))));
     }
 
-    public double Volume(double luasAlas) {
-        return (1.0 / 3.0) * luasAlas * tinggiLimas;
+    public void printVolume() {
+        System.out.println("Volume Limas Segi-4: " + ((sisiAlas * sisiAlas) * tinggi / 3));
     }
-
 }
