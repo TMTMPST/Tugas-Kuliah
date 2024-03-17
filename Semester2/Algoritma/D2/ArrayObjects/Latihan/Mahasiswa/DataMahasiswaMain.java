@@ -29,11 +29,14 @@ public class DataMahasiswaMain {
             System.out.printf("IPK: %.1f\n", dataMahasiswa[i].IPK);
             System.out.println();
         }
-        double sumIPK = 0;
-        for (int i = 0; i < 3; i++) {
-            sumIPK += dataMahasiswa[i].IPK;
-        }
-        System.out.printf("Average IPK of all students: %.6f", sumIPK/3);
-        sc.close();
+        
+        double averageIPK = DataMahasiswa30. menghitungRataRataIPK(dataMahasiswa);
+        DataMahasiswa30 maxIPK = DataMahasiswa30.mencariNilaiTertinggi(dataMahasiswa);
+
+        System.out.println("\nRata-rata IPK: " + averageIPK);
+        System.out.println("\nMahasiswa dengan IPK tertinggi:");
+        maxIPK.printData();
+        
+
     }
 }

@@ -40,12 +40,12 @@ public class Buku30 {
         harga = hrg;
     }
 
-    void hitungHargaTotal(int jml) {
+    int hitungHargaTotal(int jml) {
         hargaTotal = harga * jml;
-        System.out.println("Harga Total : Rp. " + hargaTotal);
+        return(int) hargaTotal;
     }
     
-    void hitungDiskon() {
+    int hitungDiskon() {
         if (hargaTotal > 150000) {
             diskon = hargaTotal * 0.12f;
             System.out.println("Diskon : Rp. " + diskon);
@@ -56,10 +56,12 @@ public class Buku30 {
             diskon = 0;
             System.out.println("Diskon : Rp. " + diskon);
         }
+        return(int) diskon;
     }
 
-    void hitungHargaBayar() {
+    int hitungHargaBayar() {
         bayar = hargaTotal - diskon;
         System.out.println("Harga Bayar : Rp. " + bayar);
+        return(int) bayar;
     }
 }

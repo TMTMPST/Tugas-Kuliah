@@ -2,36 +2,37 @@ import java.util.Scanner;
 
 public class BangunRuang30 {
     public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            BangunRuang30[] bangunRuang = new BangunRuang30[3];
-            for (int i = 0; i < bangunRuang.length; i++) {
-                System.out.println("========== Bangun Ruang ==========");
-                System.out.println("1. Kerucut");
-                System.out.println("2. Limas Segi Empat");
-                System.out.println("3. Bola");
-                System.out.println("Pilih Jenis Bangun Ruang : ");
-                int pil = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        BangunRuang[] bangunRuang = new BangunRuang[3];
 
-                switch (pil) {
-                    case 1:
-                    System.out.println("Masukkan Jari Jari : ");
-                    double jariJariKerucut = sc.nextDouble();
-                    System.out.println("Masukkan Sisi Miring : ");
-                    double sisiMiringKerucut = sc.nextDouble();
-                    bangunRuang[i] = new Kerucut30(jariJariKerucut, sisiMiringKerucut);
-                        break;
-                    case 2:
-                        break;
-                    case 3:
-                        break;
-                
-                    default:
-                        break;
-                }
+        for (int i = 0; i < bangunRuang.length; i++) {
+            if (i == 0) {
+                System.out.println("Kerucut");
+                System.out.print("Masukkan jari-jari: ");
+                int jari = sc.nextInt();
+                System.out.print("Masukkan sisi miring: ");
+                int sisiMiring = sc.nextInt();
+                bangunRuang[i] = new Kerucut30(jari, sisiMiring);
             }
+            if (i == 1) {
+                System.out.println("Limas Segi-4");
+                System.out.print("Masukkan panjang sisi alas: ");
+                int alas = sc.nextInt();
+                System.out.print("Masukkan tinggi: ");
+                int tinggi = sc.nextInt();
+                bangunRuang[i] = new LimasSegiEmpatSamaSisi30(alas, tinggi);
+            }
+            if (i == 2) {
+                System.out.println("Bola");
+                System.out.print("Masukkan jari-jari: ");
+                int jari = sc.nextInt();
+                bangunRuang[i] = new Bola30(jari);
+            }
+            bangunRuang[i].printLuas();
+            bangunRuang[i].printVolume();
+            System.out.println();
+        }
 
+        sc.close();
     }
 }
-    
- 
-

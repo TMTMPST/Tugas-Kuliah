@@ -16,7 +16,7 @@ public class BukuMain30 {
         bk1.hitungHargaTotal(5);
         bk1.hitungDiskon();
         bk1.hitungHargaBayar();
-  
+
         System.out.println("======================================================");
 
         Buku30 bk2 = new Buku30("Self Reward", "Mahera Ayesha", 160, 29, 59000);

@@ -1,15 +1,15 @@
-public class Bola30 {
-    public double jariJari;
+public class Bola30 extends BangunRuang {
+    int jari;
 
-    public Bola30(double jariJari) {
-        this.jariJari = jariJari;
+    public Bola30(int jari) {
+        this.jari = jari;
     }
 
-    public double LuasPermukaan() {
-        return 4 * Math.PI * jariJari * jariJari;
+    public void printLuas() {
+        System.out.println("Luas Bola: " + (4 * Math.PI * jari * jari));
     }
 
-    public double Volume() {
-        return (4.0 / 3.0) * Math.PI * jariJari * jariJari * jariJari;
+    public void printVolume() {
+        System.out.println("Volume Bola: " + ((4.0 / 3.0) * Math.PI * jari * jari * jari));
     }
 }

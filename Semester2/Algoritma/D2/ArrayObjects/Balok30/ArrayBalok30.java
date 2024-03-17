@@ -9,7 +9,8 @@ public class ArrayBalok30 {
         blArray[2] = new Balok30 (210, 50, 25);
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Volime balok ke-" + i + " : " + blArray[i].hitungVolume());
+            System.out.println("Volume balok ke-" + i + " : " + blArray[i].hitungVolume());
+            System.out.println("Volume balok ke-" + i + " : " + blArray[i].luas());
         }
     }
 }
