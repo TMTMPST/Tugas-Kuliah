@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayOfObject",
+            "request": "launch",
+            "mainClass": "ArrayOfObject",
+            "projectName": "Tugas-Kuliah_81693146"
+        },
+        {
+            "type": "java",
+            "name": "PersewaanMain30",
+            "request": "launch",
+            "mainClass": "Quiz1.PersewaanMain30",
+            "projectName": "Tugas-Kuliah_81693146"
+        },
+        {
+            "type": "java",
             "name": "BukuMain30",
             "request": "launch",
             "mainClass": "D1.Buku30.BukuMain30",
