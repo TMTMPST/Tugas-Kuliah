@@ -1,4 +1,4 @@
-package Percobaan_1;
+package Percobaan_2;
 
 import java.util.Scanner;
 
@@ -6,16 +6,12 @@ public class Main30 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan Jumlah Kapasitas Gudang : ");
-        int n = sc.nextInt();
-        gudang30 gudang = new gudang30(n);
+        gudang30 gudang = new gudang30(7);
         while (true) {
-            System.out.println("\nKapasitas MAX : " + gudang.size);
-            System.out.println("Jumlah Barang : " + (gudang.top + 1) + "\n");
             System.out.println("\nMenu: ");
             System.out.println("1. Tambah barang ");
             System.out.println("2. Ambil barang");
             System.out.println("3. Tampilkan barang");
-            System.out.println("4. Lihat Barang Teratas");
             System.out.println("0. Keluar");
             System.out.print("Pilih operasi :");
             int pilihan = sc.nextInt();
@@ -25,7 +21,7 @@ public class Main30 {
                 case 1:
                     System.out.print("Masukkan kode barang : ");
                     int kode = sc.nextInt();
-                    sc.nextLine();
+                    sc.nextLine();  
                     System.out.print("Masukkan nama barang : ");
                     String nama = sc.nextLine();
                     System.out.print("Masukkan nama kategori : ");

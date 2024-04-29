@@ -1,4 +1,4 @@
-package Percobaan_1;
+package Latihan;
 
 import java.util.Scanner;
 
@@ -16,6 +16,8 @@ public class Main30 {
             System.out.println("2. Ambil barang");
             System.out.println("3. Tampilkan barang");
             System.out.println("4. Lihat Barang Teratas");
+            System.out.println("5. Lihat Barang Terbawah");
+            System.out.println("6. Cari barang");
             System.out.println("0. Keluar");
             System.out.print("Pilih operasi :");
             int pilihan = sc.nextInt();
@@ -46,6 +48,14 @@ public class Main30 {
                     gudang.lihatBarangTeratas();
                     break;
                 
+                case 5:
+                    gudang.lihatBarangTerbawah();
+                    break;
+                case 6:
+                    System.out.print("Cari Barang (Kode / Nama) : ");
+                    String i = sc.nextLine();
+                    gudang.cariBarang(i);
+                    break;
                 case 0:
                     break;
                 default:

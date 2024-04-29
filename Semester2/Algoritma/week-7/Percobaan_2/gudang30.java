@@ -1,4 +1,4 @@
-package Percobaan_1;
+package Percobaan_2;
 
 public class gudang30 {
     barang30[] tumpukan;
@@ -8,6 +8,19 @@ public class gudang30 {
         size = kapasitas;
         tumpukan = new barang30[size];
         top = -1;
+    }
+    public String KonversiDesimalKeBiner(int kode){
+        StackKonversi30 stack = new StackKonversi30();
+        while (kode != 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode /2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
     }
     
     public boolean cekKosong(){
@@ -41,6 +54,7 @@ public class gudang30 {
             barang30 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari gudang. ");
+            System.out.println("Kode Unik dalam Biner " + KonversiDesimalKeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tumpukan barang kosong.");

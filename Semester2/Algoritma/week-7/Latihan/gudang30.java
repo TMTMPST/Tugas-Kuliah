@@ -1,4 +1,4 @@
-package Percobaan_1;
+package Latihan;
 
 public class gudang30 {
     barang30[] tumpukan;
@@ -57,6 +57,55 @@ public class gudang30 {
             System.out.println("Tumpukan barang kosong.");
             return null;
         }
+    }
+
+    public barang30 lihatBarangTerbawah(){
+        if (!cekKosong()) {
+            barang30 barangTerbawah = tumpukan[0];
+            System.out.println("Barang Terbawah : " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukan barang kosong.");
+            return null;
+        }
+    }
+    public void printBarang(int i){
+        System.out.println("Barang ke : " + (i + 1) + " Nama barang : " + tumpukan[i].nama);
+    }
+
+    public void cariBarang(String cari) {
+        if (cekKosong()) {
+            System.out.println("Tumpukan barang kosong");
+            return;
+        }
+
+        int i = cariKodeBarang(cari);
+        if (i > -1) {
+            printBarang(i);
+        } else {
+            System.out.println("Barang " + cari + " tidak ditemukan");
+        }
+
+    }
+
+    private int cariKodeBarang(String cari) {
+        int cariKode = -1;
+        if (cari.matches("[0-9]+")) {
+            cariKode = Integer.parseInt(cari);
+        }
+
+
+        for (int i = 0; i <= top; i++) {
+            if (tumpukan[i].kode == cariKode) {
+                System.out.println("Barang ditemukan");
+                return i;
+            }
+            if (tumpukan[i].nama.equals(cari)) {
+                System.out.println("Barang ditemukan");
+                return i;
+            }
+        }
+        return -1;
     }
 
     public void tampilkanBarang(){
