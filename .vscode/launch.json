@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main30",
+            "request": "launch",
+            "mainClass": "Percobaan_1.Main30",
+            "projectName": "Tugas-Kuliah_5c1f16bc"
+        },
+        {
+            "type": "java",
             "name": "ArrayOfObject",
             "request": "launch",
             "mainClass": "ArrayOfObject",
