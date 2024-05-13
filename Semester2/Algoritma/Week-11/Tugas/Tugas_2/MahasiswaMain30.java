@@ -20,9 +20,9 @@ public class MahasiswaMain30 {
             sc.nextLine();
             switch (menu) {
                 case 1:
-                    System.out.print("Name: ");
+                    System.out.print("Nama : ");
                     String nama = sc.nextLine();
-                    System.out.print("Nim ");
+                    System.out.print("Nim  : ");
                     int nim = sc.nextInt();
                     mhs.Enqueue(nama, nim);
                     break;

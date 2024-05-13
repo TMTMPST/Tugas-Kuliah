@@ -12,7 +12,7 @@ public class SLL30 {
     void print(){
         if (!isEmpty()) {
             Node30 tmp = head;
-            System.out.print("Isi Linked List \t");
+            System.out.println("Isi Linked List \t");
             while (tmp != null) {
                 Mahasiswa30 mhs = (Mahasiswa30) tmp.data;
                 System.out.println("Nama : " + mhs.nama + ", NIM : " + mhs.nim);
