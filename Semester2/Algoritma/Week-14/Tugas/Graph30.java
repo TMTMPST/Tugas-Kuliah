@@ -3,18 +3,23 @@ package Tugas;
 public class Graph30 {
     int vertex;
     DoubleLinkedList30 list[];
+    int edge;
 
     public Graph30(int v) {
         vertex = v;
+        edge = 0;
         list = new DoubleLinkedList30[v];
         for (int i = 0; i < v; i++) {
             list[i] = new DoubleLinkedList30();
         }
     }
 
+    public int edge(){
+        return edge;
+    }
+
     public void addEdge(int asal, int tujuan, int jarak){
         list[asal].addFirst(tujuan, jarak);
-    
     }
 
     public void degree(int asal) throws Exception {
@@ -62,12 +67,44 @@ public class Graph30 {
         System.out.println("");
     }
 
-    public boolean cekEdge(int asal, int tujuan) throws Exception {
+    public void cekEdge(int asal, int tujuan) throws Exception {
+        boolean found = true;
         for (int i = 0; i < list[asal].size(); i++) {
             if (list[asal].get(i) == tujuan) {
-                return true;
+                found = true;
+                break;
             }
         }
-        return false;
+        if (found) {
+            System.out.println("Gedung " + (char) ('A' + asal) + " Dan " + (char) ('A' + tujuan) + " Bertetangga");
+        } else {
+            System.out.println("Gedung " + (char) ('A' + asal) + " Dan " + (char) ('A' + tujuan) + " Tidak Bertetangga");
+        }
+    }
+
+    //No 2 Update Jarak
+    public void updateJarak(int asal, int tujuan, int jarak) throws Exception{
+        boolean found = false;
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                list[asal].updateJarak(i, jarak);
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            System.out.println("Berhasil diupdate");
+        } else {
+            System.out.println("Edge tidak ditemukan");
+        }
+    }
+
+    //No 3 hitung Edge
+    public int hitungEdge() {
+        int totalEdges = 0;
+        for (int i = 0; i < vertex; i++) {
+            totalEdges += list[i].size();
+        }
+        return totalEdges;
     }
 }

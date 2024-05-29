@@ -61,4 +61,19 @@ public class Graph30 {
         }
         System.out.println("");
     }
+
+    public void cekEdge(int asal, int tujuan) throws Exception {
+        boolean found = false;
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            System.out.println("Gedung " + (char) ('A' + asal) + " Dan " + (char) ('A' + tujuan) + " Bertetangga");
+        } else {
+            System.out.println("Gedung " + (char) ('A' + asal) + " Dan " + (char) ('A' + tujuan) + " Tidak Bertetangga");
+        }
+    }
 }

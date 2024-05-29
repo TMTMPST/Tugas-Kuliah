@@ -74,5 +74,15 @@ public class DoubleLinkedList30 {
         size = 0;
     }
 
+    public void updateJarak(int index, int jarak) throws Exception {
+        if (isEmpty() || index >= size) {
+            throw new Exception("Nilai Index Di luar batas");
+        }
+        Node30 tmp = head;
+        for (int i = 0; i < index; i++) {
+            tmp = tmp.next;
+        }
+        tmp.jarak = jarak;
+        }
 }
 
