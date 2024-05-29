@@ -11,7 +11,7 @@ public class Queue {
     void print(){
         if (!isEmpty()) {
             Mahasiswa30 tmp = front;
-            System.out.print("Isi Queue \t");
+            System.out.println("Isi Queue \t");
             while (tmp != null) {
                 System.out.println("Nama : " + tmp.nama + ", NIM : " + tmp.nim);
                 tmp = tmp.next;
@@ -35,8 +35,10 @@ public class Queue {
     }
 
     public void Dequeue(){
-        if (!isEmpty()) {
+        if (isEmpty()) {
             System.out.println("Data Masih Kosong");
+        } else if (front == rear) {
+            front = rear = null;
         } else {
             front = front.next;
         }

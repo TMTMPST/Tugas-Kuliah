@@ -97,7 +97,7 @@ public class DLL30 {
         if (isEmpty() || index >= size) {
             throw new Exception("index diluar batas");
         } else if (index == 0) {
-             removeFirst();
+            removeFirst();
         } else {
             Film30 current = head;
             int i = 0;
@@ -166,7 +166,7 @@ public class DLL30 {
         for (int i = 0; i < size - 1; i++) {
             Film30 current = head;
             for (int j = 0; j < size - i - 1; j++) {
-                if (current.id > current.next.id) {
+                if (current.rating < current.next.rating) {
                     swap(current, current.next);
                 }
                 current = current.next;
