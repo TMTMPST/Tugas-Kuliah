@@ -44,6 +44,7 @@ Route::domain('{account}.example.com')->group(function () {
     });
 });
 
+// use App\Http\
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/user', [UserController::class, 'index']);
@@ -87,6 +88,10 @@ Route::resource('photos', PhotoController::class)->except([
     'update',
     'destroy'
 ]);
+
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Vidi']);
+//     });
 
 Route::get('/greeting', [WelcomeController::class,
 'greeting']);
