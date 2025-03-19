@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Dotenv\Validator;
 use Illuminate\Http\Request;
 use App\Models\UserModel;
 use Illuminate\Support\Facades\Hash;
@@ -159,6 +160,35 @@ class UserController extends Controller
 
             // jika terjadi error ketika menghapus data, redirect kembali ke halaman dengan membawa pesan error
             return redirect('/user')->with('error', 'Data user tidak bisa dihapus karena masih terdapat data yang terkait');
+        }
+    }
+
+    public function store_ajax(Request $request){
+        if ($request->ajax()){
+            $rules = [
+                'level_id' => 'required|integer',
+                'username' => 'required|string|min:3|unique:m_user,username',
+                'nama' => 'required|string|max:100',
+                'password' => 'required|min:6',
+
+
+            ];
+
+            $validator = Validator::make($request->all(), $rules);
+            
+            if ($validator->fails()) {
+                return response()->json([
+                    'status'  => false,
+                    'message' => 'Validasi Gagal',
+                    'msgField' => $validator->errors(),
+                ]);
+            }
+
+            UserModel::create( $request->all);
+            return response()->json([
+                'status' => true,
+                'message'=> 'Data user berhasil disimpan'
+            ]);
         }
     }
 }
