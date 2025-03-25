@@ -12,7 +12,7 @@
                     <label>Level Pengguna</label>
                     <select name="level_id" id="level_id" class="form-control" required>
                         <option value="">- Pilih Level -</option>
-                        @foreach($level as $l)
+                        @foreach ($level as $l)
                             <option value="{{ $l->level_id }}">{{ $l->level_nama }}</option>
                         @endforeach
                     </select>
@@ -30,33 +30,47 @@
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input value="" type="password" name="password" id="password" class="form-
-    control" required>
+                    <input value="" type="password" name="password" id="password" class="form-control" required>
                     <small id="error-password" class="error-text form-text text-danger"></small>
                 </div>
             </div>
-            div class="modal-footer">
-            <button type="button" data-dismiss="modal" class="btn btn-warning">Batal</button>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-warning">Batal</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
         </div>
-    </div>
     </div>
 </form>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $("#form-tambah").validate({
             rules: {
-                level_id: { required: true, number: true },
-                username: { required: true, minlength: 3, maxlength: 20 },
-                nama: { required: true, minlength: 3, maxlength: 100 },
-                password: { required: true, minlength: 6, maxlength: 20 }
+                level_id: {
+                    required: true,
+                    number: true
+                },
+                username: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 20
+                },
+                nama: {
+                    required: true,
+                    minlength: 3,
+                    maxlength: 100
+                },
+                password: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 20
+                }
             },
-            submitHandler: function (form) {
+            submitHandler: function(form) {
                 $.ajax({
                     url: form.action,
                     type: form.method,
                     data: $(form).serialize(),
-                    success: function (response) {
+                    success: function(response) {
                         if (response.status) {
                             $('#myModal').modal('hide');
                             Swal.fire({
@@ -67,7 +81,7 @@
                             dataUser.ajax.reload();
                         } else {
                             $('.error-text').text('');
-                            $.each(response.msgField, function (prefix, val) {
+                            $.each(response.msgField, function(prefix, val) {
                                 $('#error-' + prefix).text(val[0]);
                             });
                             Swal.fire({
@@ -81,14 +95,14 @@
                 return false;
             },
             errorElement: 'span',
-            errorPlacement: function (error, element) {
+            errorPlacement: function(error, element) {
                 error.addClass('invalid-feedback');
                 element.closest('.form-group').append(error);
             },
-            highlight: function (element, errorClass, validClass) {
+            highlight: function(element, errorClass, validClass) {
                 $(element).addClass('is-invalid');
             },
-            unhighlight: function (element, errorClass, validClass) {
+            unhighlight: function(element, errorClass, validClass) {
                 $(element).removeClass('is-invalid');
             }
         });
