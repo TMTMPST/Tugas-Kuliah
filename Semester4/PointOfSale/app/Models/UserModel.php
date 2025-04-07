@@ -9,6 +9,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
 class UserModel extends Authenticatable {
+
+    use HasFactory;
     protected $table = 'm_user';
     protected $primaryKey = 'user_id';
     protected $fillable = ['username', 'password', 'nama', 'level_id', 'created_at', 'updated_at'];
