@@ -14,22 +14,133 @@ class BarangSeeder extends Seeder
     public function run(): void
     {
         $data = [
-            ['barang_id' => 1, 'kategori_id' => 1, 'barang_kode' => 'B01', 'barang_nama' => 'HP Oppo', 'harga_beli' => 2000000, 'harga_jual' => 2500000],
-            ['barang_id' => 2, 'kategori_id' => 1, 'barang_kode' => 'B02', 'barang_nama' => 'Laptop Asus', 'harga_beli' => 7000000, 'harga_jual' => 8000000],
-            ['barang_id' => 3, 'kategori_id' => 1, 'barang_kode' => 'B03', 'barang_nama' => 'TV Samsung', 'harga_beli' => 1500000, 'harga_jual' => 2000000],
-            ['barang_id' => 4, 'kategori_id' => 2, 'barang_kode' => 'B04', 'barang_nama' => 'Gamis Wanita', 'harga_beli' => 40000, 'harga_jual' => 45000],
-            ['barang_id' => 5, 'kategori_id' => 2, 'barang_kode' => 'B05', 'barang_nama' => 'Daster', 'harga_beli' => 50000, 'harga_jual' => 55000],
-            ['barang_id' => 6, 'kategori_id' => 2, 'barang_kode' => 'B06', 'barang_nama' => 'Celana Kargo', 'harga_beli' => 60000, 'harga_jual' => 65000],
-            ['barang_id' => 7, 'kategori_id' => 3, 'barang_kode' => 'B07', 'barang_nama' => 'Pensil', 'harga_beli' => 7000, 'harga_jual' => 7500],
-            ['barang_id' => 8, 'kategori_id' => 3, 'barang_kode' => 'B08', 'barang_nama' => 'Penghapus', 'harga_beli' => 8000, 'harga_jual' => 8500],
-            ['barang_id' => 9, 'kategori_id' => 3, 'barang_kode' => 'B09', 'barang_nama' => 'Buku', 'harga_beli' => 9000, 'harga_jual' => 9500],
-            ['barang_id' => 10, 'kategori_id' => 4, 'barang_kode' => 'B10', 'barang_nama' => 'Sambal Terasi', 'harga_beli' => 1000, 'harga_jual' => 1500],
-            ['barang_id' => 11, 'kategori_id' => 4, 'barang_kode' => 'B11', 'barang_nama' => 'Onigiri', 'harga_beli' => 11000, 'harga_jual' => 11500],
-            ['barang_id' => 12, 'kategori_id' => 4, 'barang_kode' => 'B12', 'barang_nama' => 'Snack', 'harga_beli' => 11000, 'harga_jual' => 11500],
-            ['barang_id' => 13, 'kategori_id' => 5, 'barang_kode' => 'B13', 'barang_nama' => 'Aqua', 'harga_beli' => 3000, 'harga_jual' => 5000],
-            ['barang_id' => 14, 'kategori_id' => 5, 'barang_kode' => 'B14', 'barang_nama' => 'Sprite', 'harga_beli' => 7000, 'harga_jual' => 8000],
-            ['barang_id' => 15, 'kategori_id' => 5, 'barang_kode' => 'B15', 'barang_nama' => 'Fanta', 'harga_beli' => 7000, 'harga_jual' => 8000],
+            // Supplier 1 - Elektronik (5 products)
+            [
+                'barang_id' => 1,
+                'kategori_id' => 1,
+                'barang_kode' => 'BRG001',
+                'barang_nama' => 'Smartphone XYZ',
+                'harga_beli' => 2000000,
+                'harga_jual' => 2500000,
+            ],
+            [
+                'barang_id' => 2,
+                'kategori_id' => 1,
+                'barang_kode' => 'BRG002',
+                'barang_nama' => 'Laptop ABC',
+                'harga_beli' => 8000000,
+                'harga_jual' => 8750000,
+            ],
+            [
+                'barang_id' => 3,
+                'kategori_id' => 1,
+                'barang_kode' => 'BRG003',
+                'barang_nama' => 'TV LED 43 inch',
+                'harga_beli' => 3500000,
+                'harga_jual' => 4200000,
+            ],
+            [
+                'barang_id' => 4,
+                'kategori_id' => 1,
+                'barang_kode' => 'BRG004',
+                'barang_nama' => 'Headphone Bluetooth',
+                'harga_beli' => 350000,
+                'harga_jual' => 450000,
+            ],
+            [
+                'barang_id' => 5,
+                'kategori_id' => 1,
+                'barang_kode' => 'BRG005',
+                'barang_nama' => 'Smart Watch',
+                'harga_beli' => 1200000,
+                'harga_jual' => 1500000,
+            ],
+
+            // Supplier 2 - Fashion (5 products)
+            [
+                'barang_id' => 6,
+                'kategori_id' => 2,
+                'barang_kode' => 'BRG006',
+                'barang_nama' => 'Kemeja Pria',
+                'harga_beli' => 150000,
+                'harga_jual' => 200000,
+            ],
+            [
+                'barang_id' => 7,
+                'kategori_id' => 2,
+                'barang_kode' => 'BRG007',
+                'barang_nama' => 'Celana Jeans',
+                'harga_beli' => 200000,
+                'harga_jual' => 275000,
+            ],
+            [
+                'barang_id' => 8,
+                'kategori_id' => 2,
+                'barang_kode' => 'BRG008',
+                'barang_nama' => 'Dress Casual',
+                'harga_beli' => 180000,
+                'harga_jual' => 250000,
+            ],
+            [
+                'barang_id' => 9,
+                'kategori_id' => 2,
+                'barang_kode' => 'BRG009',
+                'barang_nama' => 'Jaket Denim',
+                'harga_beli' => 280000,
+                'harga_jual' => 350000,
+            ],
+            [
+                'barang_id' => 10,
+                'kategori_id' => 2,
+                'barang_kode' => 'BRG010',
+                'barang_nama' => 'Kaos Polos',
+                'harga_beli' => 60000,
+                'harga_jual' => 90000,
+            ],
+
+            // Supplier 3 - Makanan & Minuman (5 products)
+            [
+                'barang_id' => 11,
+                'kategori_id' => 3,
+                'barang_kode' => 'BRG011',
+                'barang_nama' => 'Coklat Premium',
+                'harga_beli' => 15000,
+                'harga_jual' => 25000,
+            ],
+            [
+                'barang_id' => 12,
+                'kategori_id' => 3,
+                'barang_kode' => 'BRG012',
+                'barang_nama' => 'Kopi Arabica 100g',
+                'harga_beli' => 35000,
+                'harga_jual' => 45000,
+            ],
+            [
+                'barang_id' => 13,
+                'kategori_id' => 4,
+                'barang_kode' => 'BRG013',
+                'barang_nama' => 'Air Mineral 600ml',
+                'harga_beli' => 3000,
+                'harga_jual' => 5000,
+            ],
+            [
+                'barang_id' => 14,
+                'kategori_id' => 4,
+                'barang_kode' => 'BRG014',
+                'barang_nama' => 'Soda Kaleng 330ml',
+                'harga_beli' => 7000,
+                'harga_jual' => 10000,
+            ],
+            [
+                'barang_id' => 15,
+                'kategori_id' => 3,
+                'barang_kode' => 'BRG015',
+                'barang_nama' => 'Snack Kemasan',
+                'harga_beli' => 8000,
+                'harga_jual' => 12000,
+            ],
         ];
+
         DB::table('m_barang')->insert($data);
     }
 }
