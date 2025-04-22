@@ -45,9 +45,9 @@
                         <th>No</th>
                         <th>Kode Barang</th>
                         <th>Nama Barang</th>
+                        <th>Kategori</th>
                         <th>Harga</th>
                         <th>Beli</th>
-                        <th>Harga Jual</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -107,6 +107,13 @@
                         searchable: true,
                     },
                     {
+                        data: "kategori.kategori_nama",
+                        className: "",
+                        width: "14%",
+                        orderable: true,
+                        searchable: false
+                    },
+                    {
                         data: "harga_beli",
                         className: "",
                         width: "10%",
@@ -125,13 +132,6 @@
                         render: function(data, type, row) {
                             return new Intl.NumberFormat('id-ID').format(data);
                         }
-                    },
-                    {
-                        data: "kategori.kategori_nama",
-                        className: "",
-                        width: "14%",
-                        orderable: true,
-                        searchable: false
                     },
                     {
                         data: "aksi",

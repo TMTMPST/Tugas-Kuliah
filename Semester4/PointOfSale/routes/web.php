@@ -81,6 +81,8 @@ Route::middleware(['authorize:ADM,MNG'])->group(function () {
         Route::delete('/{id}', [KategoriController::class, 'destroy']);
         Route::get('/{id}/delete_ajax', [KategoriController::class, 'confirm_ajax']);
         Route::delete('/{id}/delete_ajax', [KategoriController::class, 'delete_ajax']);
+        Route::get('/export_excel', [KategoriController::class, 'export_excel']);
+        Route::get('/export_pdf', [KategoriController::class, 'export_pdf']);
     });
 
 

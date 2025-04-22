@@ -77,7 +77,14 @@
 <body>
     <table class="border-bottom-header">
         <tr>
-            <td width="15%" class="text-center"><img src="{{ public_path('polinema-bw.png') }}" class="image"></td>
+            <td width="15%" class="text-center">
+                @php
+                    $imagePath = public_path('polinema.png');
+                    $imageData = base64_encode(file_get_contents($imagePath));
+                    $src = 'data: ' . mime_content_type($imagePath) . ';base64,' . $imageData;
+                @endphp
+                <img src="{{ $src }}" width="100">
+            </td>
             <td width="85%">
                 <span class="text-center d-block font-11 font-bold mb-1">KEMENTERIAN
                     PENDIDIKAN, KEBUDAYAAN, RISET, DAN TEKNOLOGI</span>
